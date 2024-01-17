@@ -17,5 +17,16 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage("build") {
+            agent {
+                docker {
+                    image 'node:latest'
+                    args '-u root -v ${WORKSPACE}/pipenv:/root/.local'
+                }
+            }
+            steps {
+                sh 'npm build_prod'
+            }
+        }
     }
 }
