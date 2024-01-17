@@ -3,7 +3,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'xeliol/django_demo'
         HUB_CRED_ID = 'Docker_Marinin'
-        PROJECT_DIR = 'common_marinin_frontend'
+        PROJECT_DIR = 'common_marinin_django'
     }
     stages {
         stage("deps") {
