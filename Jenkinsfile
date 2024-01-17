@@ -60,6 +60,6 @@ pipeline {
 		    		sh 'ssh -i ${SERVER_KEY} ${SERVER_USERNAME}@${SERVER_IP} sudo systemctl reload nginx'
 		    	}
         	}
-        }s
+        }
     }
 }
