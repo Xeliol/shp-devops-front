@@ -25,7 +25,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'npm build_prod'
+                sh 'npm run build_prod'
             }
         }
     }
